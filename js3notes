@@ -1,0 +1,112 @@
+// Array
+// It is used to store a collection of data
+// A set of data
+// normally we add 's' when creating an array
+var scores = [80, 70, 86, 72, 68];
+
+//Retreiving the first item of Array - start with 0 
+console.log(scores[0])
+
+// How many items in an array? - Use .length
+console.log(scroes.length);
+// Adding a new items at the end of an array - push
+scored.push(72);
+console.log(scores);
+//Removing an items from the end of an array - pop
+scores.pop()
+console.log(scores);
+
+for (var i = 0; i < scores.length; i++){
+  console.log("Item "+i+" is "+scores[i]);
+}
+
+// Create a function minMaxAvg that will take an Array as it paramenter
+// It will return the smallest item in the Array
+// It will return the largest item in the Array
+// It will return the average of all the items in the Array
+
+function minMaxAvg(arr){
+  var min //2
+  var max // 2
+  var avg // 1
+  var sum = 0
+  // Do your operation here
+  
+  // 1) Calculate the average
+  for (var i = 0; i < arr.length; i++){
+    //For each round, add the numbers
+    sum += arr[i]
+  }
+  avg = sum / arr.length;
+  
+  // 2) Calculate the max
+  for (var i = 0; i < arr.length; i++){
+    if (arr[i]> max){
+      max = arr[i]
+    }
+  }
+  
+  // 3) Calculate the min
+  return [min, max, avg]
+  for (var i = 0; i < arr.length; i++){
+    if (arr[i]> min){
+      min = arr[i]
+    }
+}
+console.log(minMaxAvg([4,1,6,2,7,3,9]))
+  
+  //String to test
+  
+  var mystring = "Asia Developer Acedemy"
+  console.log(myString.length);
+  console.log(myString.toUpperCase());
+  console.log(myString.toLowerCase());
+  console.log(myString.charAt(6));
+  console.log(myString.indexOf('ev'));
+  console.log(myString.substring(5,14));
+  console.log(myString.split(" "));
+  
+  function upperCaseWord(sentence){
+    //Initialise the answer 
+    var asnwer = "";
+    // 2) ...
+    var splitSentence = sentence.split(" ");
+    // 3) ...
+    for (var i = 0; i < splitSentence.length; i++){
+    // 4) ...a) b)
+      answer += splitSentence[i].charAt(0).toUpperCase()
+      splitSentence[i].substring(1);
+      //5) ...
+      if (i != splitSentence.length -1){
+        answer+= " ";
+      }
+    }
+  }
+  
+  // Number methods
+  
+  var myNumber = 10.23456789
+  
+  console.log(myNumber.toFixed(3));
+  console.log(myNumber.toPrecision(3));
+  
+  // Math
+  
+  var anotherNumber = 10.2
+  console.log(Math.round(anotherNumber));
+  console.log(Math.ceil(anotherNumber));
+  console.log(Math.floor(anotherNumber));
+  
+  console.log(Math.random())
+  
+  var randomNumber = Math.ceil(Math.random()*
+   100)
+  console.log(randomNumber)
+  
+  var students =
+      ["Joshua", "Anson", "Matthew", "Shivashankari"; "Vincent"]
+
+  var randomNumber = Math.floor(Math.random()*
+ student.length);
+  console.log(students[RandomNumber]+ "will do the exercise)
+                               )
